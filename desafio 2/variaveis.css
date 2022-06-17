@@ -1,0 +1,136 @@
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+#intro{
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+  background: var(--title);
+  color: var(--white);
+  display: block;
+}
+#titulo{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+#titulo2{
+
+ background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+ url('./img/wallpaper.jpeg'); 
+ background-repeat: no-repeat ;
+ background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 150px;
+
+}
+
+#titulo2 h1{
+  font-size: 36px;
+  color: var(--white);
+}
+#titulo2 p{
+  font-size: 18px;
+  color: var(--white);
+}
+#principal{
+  text-align: center;
+  padding: 30px;
+}
+#destaques{
+  display: grid;
+align-items: center;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  padding: 40px;
+
+}
+
+#destaques div{
+ 
+ width: 200px;
+ height: 120px;
+ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+ background: var(--bgCard);
+ border-radius: 6px;
+ margin: 20px auto;
+ 
+
+}
+div:hover img{
+  transform: scale(1.5); 
+  transition: 2s all ease; 
+ }
+
+@media(max-width:920px){
+  #destaques{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:515px){
+  #destaques{
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media(max-width:515px){
+  #titulo2  {
+ display: grid;
+grid-template-rows: 1fr 1fr;
+   
+  }
+}
+ 

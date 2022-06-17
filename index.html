@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./desafio 2/variaveis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span id="intro"><p>Ganhe R$ 10,00 de Desconto no Frete</p></span>
+    <div id="titulo">Jordan Shoes</div>
+    <div id="titulo2">
+        <h1>A melhor loja de Jordan </h1>
+
+        <p>O tênis Jordan é fruto de uma velha e forte <br> parceria entre a Nike e o jogador Michael Jordan.</p>
+        
+
+    </div>
+    <div id="principal">
+        <h1>Destaques</h1>
+        <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo ilimitado.</p>
+    </div>
+    
+<section id="destaques">
+       
+    <div><img src="./desafio 2/img/1.png" alt=""> </div>
+    <div><img src="./desafio 2/img/2.png" alt=""></div>
+    <div><img src="./desafio 2/img/3.png" alt=""></div>
+    <div><img src="./desafio 2/img/4.png" alt=""></div>
+    <div><img src="./desafio 2/img/5.png" alt=""></div>
+    <div><img src="./desafio 2/img/6.png" alt=""></div>
+    <div><img src="./desafio 2/img/7.png" alt=""></div>
+    <div><img src="./desafio 2/img/8.png" alt=""></div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+     const sr = ScrollReveal({
+    origin: 'top',
+    distance: '50px',
+     duration: 2000,
+     reset: true
+     });
+    
+    ScrollReveal().reveal('#intro', { delay: 100 });
+     ScrollReveal().reveal('#titulo', { delay: 200 });
+     ScrollReveal().reveal('#destaques', { delay: 300 });
+    </script>
+    
+</body>
+
+</html>
